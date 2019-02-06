@@ -1,0 +1,26 @@
+window 安装MongoDB 出现的exception：connect failed 异常
+
+1.
+创建一个Mongo.config 
+
+2
+然后在mongo.config里面添加以下内容
+##数据存储的位置 
+dbpath=H:\MongoDB\data 
+##所有的输出位置 
+logpath=H:\MongoDB\log\mongo.log
+
+3
+在文件目录中创建相应的文件夹 
+
+4
+然后通过命令行执行配置文件 mongod，注意在bin目录执行，不然找不到命令
+mongod.exe --config H:\mongoDB\mongo.config
+
+5.
+如果没有出现任务异常，不要关闭命令， 
+打开MongDB/bin 目录，然后双击mongo.exe 
+就已经成功的链接
+
+
+
